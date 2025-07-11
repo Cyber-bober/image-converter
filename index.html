@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Конвертер изображений</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Конвертер изображений</h1>
+
+        <input type="file" id="file" accept="image/*"><br><br>
+
+        <label for="format">Формат:</label>
+        <select id="format">
+            <option value="png">PNG</option>
+            <option value="jpeg">JPG</option>
+        </select>
+
+        <button id="convert">Конвертировать</button>
+
+        <img id="preview" src="" alt="Preview" style="display:none; margin-top:20px;" width="300">
+
+        <a id="download" href="#" style="display:none;">Скачать</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
